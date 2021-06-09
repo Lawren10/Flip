@@ -1,0 +1,284 @@
+
+@media screen and (width: 1024px) {
+ 
+ #game-container{
+  width: 95%;
+ }
+
+ #cards-container{
+  width: 90%;
+  margin-top: 1rem;
+ }
+
+ #game-control{
+  margin-top: 2rem;
+ }
+
+ #refresh{
+  font-size: 10rem;
+ }
+
+ #timer{
+  height: 5rem;
+  font-size: 6rem;
+  padding: 4rem 1rem;
+ }
+
+ #flips{
+  height: 5rem;
+  font-size: 6rem;
+  padding: 4rem 1rem;
+ }
+
+ #victory,
+ #game-over{
+  font-size: 10rem;
+ }
+
+ #restart,
+ #resume{
+  font-size: 6rem;
+ }
+
+}
+
+@media screen and (max-width: 540px) {
+
+ #game-container {
+  width: 95%;
+ }
+
+ #cards-container {
+ width: 90%;
+ margin-top: 1rem;
+}
+
+#game-control {
+ margin-top: .2rem;
+}
+
+#refresh {
+ font-size: 6rem;
+}
+
+#timer {
+ height: 3rem;
+ font-size: 4rem;
+ padding: 2rem 1rem;
+}
+
+#flips {
+ height: 3rem;
+ font-size: 4rem;
+ padding: 2rem 1rem;
+}
+
+#victory,
+#game-over {
+ font-size: 6rem;
+}
+
+#restart,
+#resume {
+ font-size: 3.5rem;
+}
+
+}
+
+
+@media screen and (max-width: 768px){
+
+ #game-container {
+  width: 95%;
+ }
+ 
+ #cards-container {
+  width: 95%;
+  margin-top: 1rem;
+ }
+
+ #refresh {
+  font-size: 6rem;
+ }
+
+ #timer {
+  height: 3rem;
+  font-size: 5rem;
+  padding: 2.5rem 1rem;
+ }
+
+ #flips {
+  height: 3rem;
+  font-size: 5rem;
+  padding: 2.5rem 1rem;
+ }
+
+ #victory,
+ #game-over {
+  font-size: 6rem;
+ }
+
+ #restart,
+ #resume {
+  font-size: 3.5rem;
+ }
+
+
+}
+
+@media screen and (max-width: 420px) {
+#game-container {
+ width: 100%;
+}
+
+#cards-container {
+ width: 95%;
+ margin-top: 0;
+}
+
+#game-control {
+ margin-top: 1rem;
+}
+
+.main-card {
+ width: calc(33.3% - 2%);
+ height: calc(25% - 2%);
+ 
+}
+
+ #refresh {
+  font-size: 5rem;
+ }
+
+ #timer {
+  height: 3rem;
+  font-size: 4rem;
+  padding: 2rem 1rem;
+ }
+
+ #flips {
+  height: 3rem;
+  font-size: 4rem;
+  padding: 2rem 1rem;
+ }
+
+ #victory {
+  font-size: 5rem;
+ }
+
+ #restart,
+ #resume {
+  font-size: 3rem;
+ }
+
+ 
+ #game-over{
+  font-size: 3rem;
+ }
+
+}
+
+@media screen and (max-width: 360px) {
+ #game-container {
+  width: 100%;
+ }
+
+ #cards-container {
+  width: 95%;
+  margin-top: 0;
+ }
+
+ #game-control {
+  margin-top: 1rem;
+ }
+
+ .main-card {
+  width: calc(33.3% - 2%);
+  height: calc(25% - 2%);
+
+ }
+
+ #refresh {
+  font-size: 4rem;
+ }
+
+ #timer {
+  height: 3rem;
+  font-size: 3rem;
+  padding: 2rem 1rem;
+ }
+
+ #flips {
+  height: 3rem;
+  font-size: 3rem;
+  padding: 2rem 1rem;
+ }
+
+ #victory {
+  font-size: 4rem;
+ }
+
+ #restart,
+ #resume {
+  font-size: 2.5rem;
+ }
+
+
+ #game-over {
+  font-size: 3rem;
+ }
+
+}
+
+@media screen and (max-width: 320px) {
+ #game-container {
+  width: 100%;
+ }
+
+ #cards-container {
+  width: 95%;
+  margin-top: 0;
+ }
+
+ #game-control {
+  margin-top: 0rem;
+  gap: 1rem;
+ }
+
+ .main-card {
+  width: calc(33.3% - 2%);
+  height: calc(25% - 2%);
+
+ }
+
+ #refresh {
+  font-size: 4rem;
+ }
+
+ #timer {
+  height: 2rem;
+  font-size: 3rem;
+  padding: 1.5rem 1rem;
+ }
+
+ #flips {
+  height: 3rem;
+  font-size: 3rem;
+  padding: 1.5rem 1rem;
+ }
+
+ #victory {
+  font-size: 4rem;
+ }
+
+ #restart,
+ #resume {
+  font-size: 2.5rem;
+ }
+
+
+ #game-over {
+  font-size: 4rem;
+ }
+
+}

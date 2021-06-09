@@ -1,0 +1,234 @@
+@import './media.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url(../pics/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: background-move 60s alternate infinite linear;
+}
+
+@keyframes background-move{
+ from{
+  background-position: top left;
+  background-position: left top;
+ }
+ to{
+  background-position: bottom right;
+  background-position: right bottom;
+ }
+}
+
+#progress{
+ position: absolute;
+ background-color: rgba(0, 128, 128, 0.658);
+ height: 100%;
+ width: 0%;
+ top: 0%;
+ border-radius: 50px;
+ z-index: -1;
+ transition: width .5s ease;
+}
+
+#overlay-resume {
+ position: absolute;
+ background-color: transparent;
+ height: 95%;
+ width: 60%;
+ top: 2.5%;
+ border-radius: .5rem;
+ display: grid;
+ place-content: center;
+ z-index: 11;
+ /* display: none; */
+}
+
+#refresh {
+ background: rgba(24, 177, 164, 0.452);
+ border: none;
+ border-radius: .5rem;
+ width: auto;
+ height: auto;
+ font-family: 'Amatic SC',cursive;
+ font-size: 6rem;
+ font-weight: bold;
+ color: #CAF0F8;
+ box-shadow: inset .2rem .2rem .3rem .5rem rgba(144, 225, 239, 0.527);
+ cursor: pointer;
+ display: grid;
+ place-content: center;
+ padding: 1rem;
+
+}
+
+
+#overlay-victory,
+#overlay-gameover 
+{
+ position: absolute;
+ background-color:transparent;
+ height: 95%;
+ width: 60%;
+ top: 2.5%;
+ border-radius: .5rem;
+ display: grid;
+ place-content: center;
+ z-index: 11;
+ display: none;
+}
+
+#victory,
+#game-over
+{
+ background: rgba(24, 177, 164, 0.795);
+ border: none;
+ border-radius: .5rem;
+ width: auto;
+ height: auto;
+ font-size: 5rem;
+ font-weight: bold;
+ color: #CAF0F8;
+ box-shadow: inset .2rem .2rem .3rem .1rem rgba(144, 225, 239, 0.527);
+ font-family: 'Amatic SC', cursive;
+ display: grid;
+ place-content: center;
+ padding: 1rem;
+
+}
+
+#restart,
+#resume{
+ border: none;
+ border-radius: .5rem;
+ width: auto;
+ height: auto;
+ margin-top: 2rem;
+ font-size: 4rem;
+ font-weight: bolder;
+ font-family: 'Amatic SC',cursive;
+ color: #dcf8fd;
+ background: rgba(24, 177, 164, 0.726);
+ box-shadow: inset .2rem .2rem .3rem .1rem rgba(144, 225, 239, 0.527);
+ cursor: pointer;
+}
+
+#game-container{
+    position: absolute;
+    width: 60%;
+    height: 95%;
+    background-color: transparent;
+    border-radius: 50px;
+    box-shadow: inset 0 0 2rem 1rem rgba(144, 225, 239, 0.527) ;
+    position: relative;
+    backdrop-filter: blur(.5rem);
+    z-index: 10;
+}
+
+
+#game-control{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 5rem;
+    margin: auto;
+    padding: 1.5rem 0 0 0;
+
+}
+
+
+
+
+ #timer{
+   background: transparent;
+   font-family:'Amatic SC',
+   cursive;
+   width: auto;
+   height: 4rem;
+   border-radius: .5rem;
+   font-size: 4rem;
+   font-weight: bold;
+   padding: .8rem;
+   color: #CAF0F8;
+   display: grid;
+   place-content: center;
+    box-shadow: inset .2rem .2rem .3rem .05rem rgba(144, 225, 239, 0.527);
+}
+
+#flips{
+ background: transparent;
+ font-family:'Amatic SC',cursive;
+ width: auto;
+ height: 4rem;
+ border-radius: .5rem;
+ font-size: 4rem;
+ font-weight: bold;
+ padding: .8rem;
+ color: #CAF0F8;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
+ box-shadow: inset .2rem .2rem .3rem .05rem rgba(144, 225, 239, 0.527);
+}
+
+
+#cards-container{
+    width: 65%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    perspective: 1000px;
+    z-index: 20;
+}
+
+.main-card{
+    width: calc(25% - 2%);
+    height: calc(33.33% - 2%);
+    margin: 1%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px rgba(0, 41, 38, 0.308);
+    transform-style: preserve-3d;
+    transition: transform .5s ease;
+    
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    backface-visibility: hidden;
+
+}
+
+.front{
+    transform: rotateY(180deg);
+}
+
+/* .visibility{
+    visibility: hidden;
+    
+} */
+
+.flip{
+    transform: rotateY(180deg);
+    
+}
